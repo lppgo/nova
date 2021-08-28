@@ -1,0 +1,176 @@
+{
+  "Repositories": {
+    "debian": {
+      "debian:latest": "sha256:4a7a1f4017349067a21bd2de060dcf8b41e49fabf61b0dc3cf86a87e1f6dba9d",
+      "debian@sha256:acf7795dc91df17e10effee064bd229580a9c34213b4dba578d64768af5d8c51": "sha256:4a7a1f4017349067a21bd2de060dcf8b41e49fabf61b0dc3cf86a87e1f6dba9d"
+    },
+    // REPOSITORY
+    "localhost:15000/debian": {
+      // tag:imageID
+      "localhost:15000/debian:latest": "sha256:4a7a1f4017349067a21bd2de060dcf8b41e49fabf61b0dc3cf86a87e1f6dba9d",
+      // tag的digest:imageID
+      "localhost:15000/debian@sha256:3e24baa60967d085b95a45129f82af4eb9d1e33aff9559173542ebb15c5d9cb5": "sha256:4a7a1f4017349067a21bd2de060dcf8b41e49fabf61b0dc3cf86a87e1f6dba9d"
+    },
+    "localhost:16000/debian": {
+      "localhost:16000/debian:latest": "sha256:4a7a1f4017349067a21bd2de060dcf8b41e49fabf61b0dc3cf86a87e1f6dba9d",
+      "localhost:16000/debian@sha256:3e24baa60967d085b95a45129f82af4eb9d1e33aff9559173542ebb15c5d9cb5": "sha256:4a7a1f4017349067a21bd2de060dcf8b41e49fabf61b0dc3cf86a87e1f6dba9d"
+    },
+    "gcr.io/k8s-minikube/kicbase": {
+      "gcr.io/k8s-minikube/kicbase:v0.0.22": "sha256:bcd131522525c9c3b8695a8d144be8d177bcd5614ec5397f188115d3be0bbc24"
+    },
+    "gcr.io/uber-container-tools/kraken-agent": {
+      "gcr.io/uber-container-tools/kraken-agent:v0.0.1-1-gb6cd183": "sha256:639f43a160c020dcb17ef54a5c72e7a734d7852c79954245a386cd0a592abf7c",
+      "gcr.io/uber-container-tools/kraken-agent:v0.1.4-23-g645466c": "sha256:a0716259fe17f1210ad0f348f4935ab1b5d5b240b6da7c8aff7313c529d85be3"
+    },
+    "gcr.io/uber-container-tools/kraken-build-index": {
+      "gcr.io/uber-container-tools/kraken-build-index:v0.0.1-1-gb6cd183": "sha256:a0bc64fc75efa5db6dbf53b0d47b818bed39b3b0498d1c8da1cb6cfdf4139c0a",
+      "gcr.io/uber-container-tools/kraken-build-index:v0.1.4-23-g645466c": "sha256:3d64b2e0db04a19a63f43ad51a4a803d3fd68718952402f75391d4f5304696f0"
+    },
+    "gcr.io/uber-container-tools/kraken-herd": {
+      "gcr.io/uber-container-tools/kraken-herd:v0.0.1-1-gb6cd183": "sha256:29c5e175a6049bf3f4d945926f15272606b29bbd06a80165faab94b0fc30b509",
+      "gcr.io/uber-container-tools/kraken-herd:v0.1.4-23-g645466c": "sha256:29a8186737452552593048494ba94a11bb8c8b58d04383107217843f6bed6c68"
+    },
+    "gcr.io/uber-container-tools/kraken-origin": {
+      "gcr.io/uber-container-tools/kraken-origin:v0.0.1-1-gb6cd183": "sha256:a8e561a888695d900be5ce954ad059686c5176a0c7ce58e9c926ffe25ac377de",
+      "gcr.io/uber-container-tools/kraken-origin:v0.1.4-23-g645466c": "sha256:fbdbd17f312617b6ccd86d50b2be22e1fbb4e2b832dcf709cecd153717280160"
+    },
+    "gcr.io/uber-container-tools/kraken-proxy": {
+      "gcr.io/uber-container-tools/kraken-proxy:v0.0.1-1-gb6cd183": "sha256:5911c2a7539e985d4233fa94bb689bbbf49cd10d01e679e6a30f6e993675a018",
+      "gcr.io/uber-container-tools/kraken-proxy:v0.1.4-23-g645466c": "sha256:2041c36bf5c8c05b6f2f693625831b8f88fc00c0e6bf7c9627c4d3986f5ecd09"
+    },
+    "gcr.io/uber-container-tools/kraken-testfs": {
+      "gcr.io/uber-container-tools/kraken-testfs:v0.0.1-1-gb6cd183": "sha256:baf917e43bc40046bc7f0db0d50b6f167204bc0ac5424be19a09ba3dd3b3c307",
+      "gcr.io/uber-container-tools/kraken-testfs:v0.1.4-23-g645466c": "sha256:e0b1e0584c854f3dab5af65d11b09c8f5cd4a4dd911c9e9f68ca9d7c381843b4"
+    },
+    "gcr.io/uber-container-tools/kraken-tracker": {
+      "gcr.io/uber-container-tools/kraken-tracker:v0.0.1-1-gb6cd183": "sha256:89e9a18ef9c246970b26f2b4ba3ef045fa7480059a52a558c4829d636828b418",
+      "gcr.io/uber-container-tools/kraken-tracker:v0.1.4-23-g645466c": "sha256:aa4ea3672b426920f6d9a62f0b26efa45e8d300c9f7dc4e2101b59e7e4f96ed0"
+    },
+    "golang": {
+      "golang:1.14": "sha256:21a5635903d69da3c3d928ed429e3610eecdf878cbd763aabf5db9693016ffbb",
+      "golang:1.16": "sha256:96129f3766cf8b69c32bd0b4be8fbf8f19ef143555b76a7f7b0046ed142e296a",
+      "golang:1.16.4-alpine3.13": "sha256:722a834ff95bfd3dac4bc5aae498c245eb76b98108ed9de4293df2596e60cf1a",
+      "golang:latest": "sha256:96129f3766cf8b69c32bd0b4be8fbf8f19ef143555b76a7f7b0046ed142e296a",
+      "golang@sha256:1a7173b5b9a3af3e29a5837e0b2027e1c438fd1b83bbee8f221355087ad416d6": "sha256:21a5635903d69da3c3d928ed429e3610eecdf878cbd763aabf5db9693016ffbb",
+      "golang@sha256:6f0b0a314b158ff6caf8f12d7f6f3a966500ec6afb533e986eca7375e2f7560f": "sha256:96129f3766cf8b69c32bd0b4be8fbf8f19ef143555b76a7f7b0046ed142e296a",
+      "golang@sha256:8a106c4b4005efb43c0ba4bb5763b84742c7e222bad5a8dff73cc9f7710c64ee": "sha256:96129f3766cf8b69c32bd0b4be8fbf8f19ef143555b76a7f7b0046ed142e296a"
+    },
+    "granulate/gprofiler": {
+      "granulate/gprofiler:latest": "sha256:f4ff69d91bfc7d47f225c02dd634fe2affd3f75c1dadf5c349822bafecd870e7",
+      "granulate/gprofiler@sha256:b45f949559eba43601255b1537cf56a32df53a8d9ca0db78dd5b684993949dea": "sha256:f4ff69d91bfc7d47f225c02dd634fe2affd3f75c1dadf5c349822bafecd870e7"
+    },
+    "jaegertracing/all-in-one": {
+      "jaegertracing/all-in-one:latest": "sha256:133ab446b52af38e716f462bf84de40c9acbbc06d9b923844e67a37643f35daf",
+      "jaegertracing/all-in-one@sha256:97e33a054f9e0914e57e65f076910c89a3d367b6fccd0a274f7956c999f0ef7d": "sha256:133ab446b52af38e716f462bf84de40c9acbbc06d9b923844e67a37643f35daf"
+    },
+    "k8s.gcr.io/etcd": {
+      "k8s.gcr.io/etcd:3.4.13-0": "sha256:0369cf4303ffdb467dc219990960a9baa8512a54b0ad9283eaf55bd6c0adb934"
+    },
+    "k8s.gcr.io/kube-apiserver": {
+      "k8s.gcr.io/kube-apiserver:v1.21.1": "sha256:771ffcf9ca634e37cbd3202fd86bd7e2df48ecba4067d1992541bfa00e88a9bb"
+    },
+    "k8s.gcr.io/kube-controller-manager": {
+      "k8s.gcr.io/kube-controller-manager:v1.21.1": "sha256:e16544fd47b02fea6201a1c39f0ffae170968b6dd48ac2643c4db3cab0011ed4"
+    },
+    "k8s.gcr.io/kube-proxy": {
+      "k8s.gcr.io/kube-proxy:v1.21.1": "sha256:4359e752b5961a66ad2e9cdb4aaa57e2782d2dd2f05a0cf76946f5e5caa0fd88"
+    },
+    "k8s.gcr.io/kube-scheduler": {
+      "k8s.gcr.io/kube-scheduler:v1.21.1": "sha256:a4183b88f6e65972c4b176b43ca59de31868635a7e43805f4c6e26203de1742f"
+    },
+    "k8s.gcr.io/pause": {
+      "k8s.gcr.io/pause:3.4.1": "sha256:0f8457a4c2ecaceac160805013dc3c61c63a1ff3dee74a473a36249a748e0253"
+    },
+    "kicbase/stable": {
+      "kicbase/stable:v0.0.22": "sha256:bcd131522525c9c3b8695a8d144be8d177bcd5614ec5397f188115d3be0bbc24",
+      "kicbase/stable:v0.0.23": "sha256:9fce26cb202ecbcb479d0e9dcc943ed048e5957c0bb68667d9476ebc413ee6d7",
+      "kicbase/stable@sha256:7cc3a3cb6e51c628d8ede157ad9e1f797e8d22a1b3cedc12d3f1999cb52f962e": "sha256:bcd131522525c9c3b8695a8d144be8d177bcd5614ec5397f188115d3be0bbc24",
+      "kicbase/stable@sha256:baf6d94b2050bcbecd98994e265cf965a4f4768978620ccf5227a6dcb75ade45": "sha256:9fce26cb202ecbcb479d0e9dcc943ed048e5957c0bb68667d9476ebc413ee6d7"
+    },
+    "kraken-agent": {
+      "kraken-agent:dev": "sha256:a0716259fe17f1210ad0f348f4935ab1b5d5b240b6da7c8aff7313c529d85be3",
+      "kraken-agent:v0.0.1-1-gb6cd183": "sha256:639f43a160c020dcb17ef54a5c72e7a734d7852c79954245a386cd0a592abf7c",
+      "kraken-agent:v0.1.4-23-g645466c": "sha256:a0716259fe17f1210ad0f348f4935ab1b5d5b240b6da7c8aff7313c529d85be3"
+    },
+    "kraken-build-index": {
+      "kraken-build-index:dev": "sha256:3d64b2e0db04a19a63f43ad51a4a803d3fd68718952402f75391d4f5304696f0",
+      "kraken-build-index:v0.0.1-1-gb6cd183": "sha256:a0bc64fc75efa5db6dbf53b0d47b818bed39b3b0498d1c8da1cb6cfdf4139c0a",
+      "kraken-build-index:v0.1.4-23-g645466c": "sha256:3d64b2e0db04a19a63f43ad51a4a803d3fd68718952402f75391d4f5304696f0"
+    },
+    "kraken-herd": {
+      "kraken-herd:dev": "sha256:29a8186737452552593048494ba94a11bb8c8b58d04383107217843f6bed6c68",
+      "kraken-herd:v0.0.1-1-gb6cd183": "sha256:29c5e175a6049bf3f4d945926f15272606b29bbd06a80165faab94b0fc30b509",
+      "kraken-herd:v0.1.4-23-g645466c": "sha256:29a8186737452552593048494ba94a11bb8c8b58d04383107217843f6bed6c68"
+    },
+    "kraken-origin": {
+      "kraken-origin:dev": "sha256:fbdbd17f312617b6ccd86d50b2be22e1fbb4e2b832dcf709cecd153717280160",
+      "kraken-origin:v0.0.1-1-gb6cd183": "sha256:a8e561a888695d900be5ce954ad059686c5176a0c7ce58e9c926ffe25ac377de",
+      "kraken-origin:v0.1.4-23-g645466c": "sha256:fbdbd17f312617b6ccd86d50b2be22e1fbb4e2b832dcf709cecd153717280160"
+    },
+    "kraken-proxy": {
+      "kraken-proxy:dev": "sha256:2041c36bf5c8c05b6f2f693625831b8f88fc00c0e6bf7c9627c4d3986f5ecd09",
+      "kraken-proxy:v0.0.1-1-gb6cd183": "sha256:5911c2a7539e985d4233fa94bb689bbbf49cd10d01e679e6a30f6e993675a018",
+      "kraken-proxy:v0.1.4-23-g645466c": "sha256:2041c36bf5c8c05b6f2f693625831b8f88fc00c0e6bf7c9627c4d3986f5ecd09"
+    },
+    "kraken-testfs": {
+      "kraken-testfs:dev": "sha256:e0b1e0584c854f3dab5af65d11b09c8f5cd4a4dd911c9e9f68ca9d7c381843b4",
+      "kraken-testfs:v0.0.1-1-gb6cd183": "sha256:baf917e43bc40046bc7f0db0d50b6f167204bc0ac5424be19a09ba3dd3b3c307",
+      "kraken-testfs:v0.1.4-23-g645466c": "sha256:e0b1e0584c854f3dab5af65d11b09c8f5cd4a4dd911c9e9f68ca9d7c381843b4"
+    },
+    "kraken-tracker": {
+      "kraken-tracker:dev": "sha256:aa4ea3672b426920f6d9a62f0b26efa45e8d300c9f7dc4e2101b59e7e4f96ed0",
+      "kraken-tracker:v0.0.1-1-gb6cd183": "sha256:89e9a18ef9c246970b26f2b4ba3ef045fa7480059a52a558c4829d636828b418",
+      "kraken-tracker:v0.1.4-23-g645466c": "sha256:aa4ea3672b426920f6d9a62f0b26efa45e8d300c9f7dc4e2101b59e7e4f96ed0"
+    },
+    "mongo": {
+      "mongo:latest": "sha256:07630e791de3ceb87d39543799438e118753246d19dcfd6529bd4d27ff1b83bd",
+      "mongo@sha256:401ae88210c708d54873af22df618b46a5f3d2da1c2676d115326b205ec78d3f": "sha256:07630e791de3ceb87d39543799438e118753246d19dcfd6529bd4d27ff1b83bd"
+    },
+    "mysql": {
+      "mysql:8.0.25": "sha256:8608131cc1cffc6189cbc413344ef347cec4e21d4d59fc6acc4f89989aa0b6ab",
+      "mysql:latest": "sha256:8608131cc1cffc6189cbc413344ef347cec4e21d4d59fc6acc4f89989aa0b6ab",
+      "mysql@sha256:cd42db5e061f8d1b1854e5fe597ad7ab9b9a5198ca1a2a560e5c4135b2d2b005": "sha256:8608131cc1cffc6189cbc413344ef347cec4e21d4d59fc6acc4f89989aa0b6ab"
+    },
+    "netdata/netdata": {
+      "netdata/netdata:latest": "sha256:aa781f80de65acfc6f569a4b746e921b7bf413c426f329ecd65b36a2c231a656",
+      "netdata/netdata@sha256:194851e9445b52f806fa9c2fe4afcf37e77417f8495632729fe7b4489c62fc6b": "sha256:aa781f80de65acfc6f569a4b746e921b7bf413c426f329ecd65b36a2c231a656"
+    },
+    "nginx": {
+      "nginx:latest": "sha256:62d49f9bab67f7c70ac3395855bf01389eb3175b374e621f6f191bf31b54cd5b",
+      "nginx@sha256:75a55d33ecc73c2a242450a9f1cc858499d468f077ea942867e662c247b5e412": "sha256:62d49f9bab67f7c70ac3395855bf01389eb3175b374e621f6f191bf31b54cd5b"
+    },
+    "portainer": {
+      "portainer:latest": "sha256:580c0e4e98b06d258754cf28c55f21a6fa0dc386e6fe0bf67e453c3642de9b8b"
+    },
+    "portainer/portainer": {
+      "portainer/portainer:latest": "sha256:580c0e4e98b06d258754cf28c55f21a6fa0dc386e6fe0bf67e453c3642de9b8b",
+      "portainer/portainer@sha256:fb45b43738646048a0a0cc74fcee2865b69efde857e710126084ee5de9be0f3f": "sha256:580c0e4e98b06d258754cf28c55f21a6fa0dc386e6fe0bf67e453c3642de9b8b"
+    },
+    "postgres": {
+      "postgres:12": "sha256:b98f3fad83fd5dbbec86443a5b4f3f3302ef02b816262818068c06f8d8ed200a",
+      "postgres:latest": "sha256:26c8bcd8b71919f393464e595670e633e4f90c6981df4322d8c4a39332b0bd1e",
+      "postgres@sha256:1ad9a00724bdd8d8da9f2d8a782021a8503eff908c9413b5b34f22d518088f26": "sha256:b98f3fad83fd5dbbec86443a5b4f3f3302ef02b816262818068c06f8d8ed200a",
+      "postgres@sha256:61d5d8ef6cb4e2035f053f26b6b455c201a809354084cc8426b6904b8dd35602": "sha256:26c8bcd8b71919f393464e595670e633e4f90c6981df4322d8c4a39332b0bd1e"
+    },
+    "python": {
+      "python:3.9": "sha256:a6a0779c5fb25f7a075c83815a3803f9fbc5579beb488c86e27e91c48b679951",
+      "python@sha256:f265c5096aa52bdd478d2a5ed097727f51721fda20686523ab1b3038cc7d6417": "sha256:a6a0779c5fb25f7a075c83815a3803f9fbc5579beb488c86e27e91c48b679951"
+    },
+    "quay.io/coreos/etcd": {
+      "quay.io/coreos/etcd:v3.4.13": "sha256:d1985d4043858c43893f46e699d39a7640156962f1ccf0a2d64b8c8d621f00fc",
+      "quay.io/coreos/etcd@sha256:04833b601fa130512450afa45c4fe484fee1293634f34c7ddc231bd193c74017": "sha256:d1985d4043858c43893f46e699d39a7640156962f1ccf0a2d64b8c8d621f00fc"
+    },
+    "redis": {
+      "redis:latest": "sha256:ccee4cdf984f11952441cbab30146dae792c8d9fb668e762c78a49e7db858082",
+      "redis@sha256:eff56acc5fc7b909183da93236ba09d3b8cb7d6db31d5b25e9a46dac9b5e699b": "sha256:ccee4cdf984f11952441cbab30146dae792c8d9fb668e762c78a49e7db858082"
+    },
+    "soyking/e3w": {
+      "soyking/e3w:latest": "sha256:a123f3eeaad2837e3c16cbade4bb00f97c1592ad02d5d49dc30806a9d2bd1e0f",
+      "soyking/e3w@sha256:a00b20a6b04b715dfc0c2de999b9476fc9a87d16e15c6b2aa4a877c76db4bd4b": "sha256:a123f3eeaad2837e3c16cbade4bb00f97c1592ad02d5d49dc30806a9d2bd1e0f"
+    },
+    "zc2638/arceus": {
+      "zc2638/arceus:latest": "sha256:f159fbdf578a345fe835805f5d12d50eb21ff6c155033103946ac4f8dc9d3968",
+      "zc2638/arceus@sha256:f243c9c4424e01bb198481bd7987b7a19852d0937a2bb711063706f79455c5d0": "sha256:f159fbdf578a345fe835805f5d12d50eb21ff6c155033103946ac4f8dc9d3968"
+    }
+  }
+}

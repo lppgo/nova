@@ -1,0 +1,57 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kraken-push-cli
+spec:
+  replicas: {{ .Values.push-cli.replicas }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: kraken
+      app.kubernetes.io/component: push-cli
+      app.kubernetes.io/instance: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: kraken
+        app.kubernetes.io/component: push-cli
+        app.kubernetes.io/instance: {{ .Release.Name }}
+      {{ with .Values.push-cli.annotations -}}
+      annotations:
+{{ tpl . $ | indent 8 }}
+      {{- end }}
+    spec:
+      {{ with .Values.push-cli.initContainers -}}
+      initContainers:
+{{ toYaml . | indent 6 }}{{ end }}
+      containers:
+      - name: main
+        image: {{ .Values.kraken.repository }}/kraken-push-cli:{{ .Values.kraken.tag }}
+        imagePullPolicy: {{ .Values.kraken.imagePullPolicy }}
+        command:
+        - /usr/bin/kraken-push-cli
+        - --config={{ .Values.push-cli.config }}
+        - --port=80
+        volumeMounts:
+        - name: config
+          mountPath: /etc/config
+{{ with .Values.push-cli.extraVolumeMounts }}{{ toYaml . | indent 8 }}{{ end }}
+      volumes:
+      - name: config
+        configMap:
+          name: kraken
+{{ with .Values.push-cli.extraVolumes }}{{ toYaml . | indent 6 }}{{ end }}
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: kraken-push-cli
+spec:
+  selector:
+    app.kubernetes.io/name: kraken
+    app.kubernetes.io/component: push-cli
+    app.kubernetes.io/instance: {{ .Release.Name }}
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80

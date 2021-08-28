@@ -1,0 +1,95 @@
+// 一个image由image index (可选)、manifest、filesystem layers和Image Config四部分组成
+// Image Index 就是manifest 的集合
+// manifest 记录了image config 和 layers
+
+// 1：查看 imageIndex文件格式
+// docker mainfest inspect debian:latest
+
+// 2：manifest.json文件的格式
+// 3：config
+// 4：layers
+
+{
+  "schemaVersion": 2,
+  "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+  // manifest集合
+  "manifests": [
+    {
+      "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+      "size": 529,
+      // tag 的 degest
+      "digest": "sha256:3e24baa60967d085b95a45129f82af4eb9d1e33aff9559173542ebb15c5d9cb5",
+      // 平台
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      }
+    },
+    {
+      "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+      "size": 529,
+      "digest": "sha256:5df4bb7023e48d9cbd8ad124853dee7b0c15f7b7fca3c7694601020e5af2b96f",
+      "platform": {
+        "architecture": "arm",
+        "os": "linux",
+        "variant": "v5"
+      }
+    },
+    {
+      "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+      "size": 529,
+      "digest": "sha256:973ab50414f9597fdbd2b496e08eb22942722d9bb571c42e029c26229196259d",
+      "platform": {
+        "architecture": "arm",
+        "os": "linux",
+        "variant": "v7"
+      }
+    },
+    {
+      "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+      "size": 529,
+      "digest": "sha256:eb141a594584aae7126a89766f04dcb008834d7d95600ecb72b1e005d769746a",
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux",
+        "variant": "v8"
+      }
+    },
+    {
+      "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+      "size": 529,
+      "digest": "sha256:d34ac4249717c3dda40ae6c3f60715156d5bfe084c973cc851f967c03ac0b131",
+      "platform": {
+        "architecture": "386",
+        "os": "linux"
+      }
+    },
+    {
+      "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+      "size": 529,
+      "digest": "sha256:0be0300a57fe279a373668c06d5ec184ef4621f75d587824719fb1c4db4420ac",
+      "platform": {
+        "architecture": "mips64le",
+        "os": "linux"
+      }
+    },
+    {
+      "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+      "size": 529,
+      "digest": "sha256:cfb3166a978185dc96b1a85a4432cac008c44d25fac730161cd757d17806c349",
+      "platform": {
+        "architecture": "ppc64le",
+        "os": "linux"
+      }
+    },
+    {
+      "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+      "size": 529,
+      "digest": "sha256:0ba0446bc007a3196501ecbe91aabd4193db81085b23f4a99685448445762396",
+      "platform": {
+        "architecture": "s390x",
+        "os": "linux"
+      }
+    }
+  ]
+}

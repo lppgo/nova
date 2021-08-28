@@ -1,0 +1,88 @@
+zap:
+  level: info
+  development: false
+  disableStacktrace: true
+  encoding: console
+  encoderConfig:
+    messageKey: message
+    nameKey: logger_name
+    levelKey: level
+    timeKey: ts
+    callerKey: caller
+    stacktraceKey: stack
+    levelEncoder: capital
+    timeEncoder: iso8601
+    durationEncoder: seconds
+    callerEncoder: short
+  outputPaths:
+    - stdout
+    - /var/log/kraken/kraken-tracker/stdout.log
+  errorOutputPaths:
+    - stdout
+    - /var/log/kraken/kraken-tracker/stdout.log
+
+logging:
+  level: info
+  stdout: true
+  sentry:
+    enabled: false
+    tags:
+      deployment: default
+
+peerhandoutpolicy:
+  priority: completeness
+
+metrics:
+  m3:
+    service: kraken
+
+trackerserver:
+  announce_interval: 3s
+  listener:
+    net: unix
+    addr: /tmp/kraken-tracker.sock
+
+nginx:
+  name: kraken-tracker.conf
+  cache_dir: /var/cache/kraken/kraken-tracker/nginx/
+  log_dir: /var/log/kraken/kraken-tracker/
+
+#
+peerstore:
+  redis:
+    # addr: 127.0.0.1:14001
+    addr: localhost:6379
+    peer_set_window_size: 1h
+    max_peer_set_windows: 5
+
+origin:
+  hosts:
+    static:
+      - localhost:15002
+      # - host.docker.internal:15002
+
+# trackerserver:
+#   announce_interval: 3s
+
+# nginx:
+#   cache_dir: /tmp/kraken-tracker-nginx/
+
+tls:
+  name: kraken
+  cas:
+    - path: /etc/kraken/tls/ca/server.crt
+  server:
+    # disabled: true
+    cert:
+      path: /etc/kraken/tls/ca/server.crt
+    key:
+      path: /etc/kraken/tls/ca/server.key
+    passphrase:
+      path: /etc/kraken/tls/ca/passphrase
+  client:
+    cert:
+      path: /etc/kraken/tls/client/client.crt
+    key:
+      path: /etc/kraken/tls/client/client.key
+    passphrase:
+      path: /etc/kraken/tls/client/passphrase
